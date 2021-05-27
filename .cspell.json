@@ -21,7 +21,10 @@
     "sandboxed",
     "transpiled",
     "typedoc",
-    "untracked"
+    "untracked",
+    "NLUDB",
+    "nludb",
+    "upsert",
   ],
   "flagWords": [],
   "ignorePaths": [
