@@ -32,7 +32,7 @@ export class EmbeddingIndex {
     for (let i = 0; i < res.hits.length; i++) {
       try {
         if (res.hits[i].metadata) {
-          res.hits[i].metadata = JSON.parse(res.hits[i].metadata)
+          res.hits[i].metadata = JSON.parse(res.hits[i].metadata as string)
         }
       } catch {
         // pass
