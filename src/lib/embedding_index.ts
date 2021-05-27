@@ -1,12 +1,12 @@
-import { NludbApiBase, NludbTask } from "./api_base";
+import { NludbApiBase, NludbTask } from './api_base';
 import {
   DeleteResult,
   EmbedIndexResult,
   InsertRequest,
   InsertResult,
   SearchRequest,
-SearchResult,
-} from "./types";
+  SearchResult,
+} from './types';
 
 export class EmbeddingIndex {
   id: string;
@@ -22,44 +22,48 @@ export class EmbeddingIndex {
   }
 
   async search(params: SearchRequest): Promise<SearchResult> {
-    const res = (await this.nludb.post("embedding-index/search", {
+    const res = (await this.nludb.post('embedding-index/search', {
       indexId: this.id,
-      ...params
+      ...params,
     })) as SearchResult;
     if (typeof res.hits == 'undefined') {
-      res.hits = []
+      res.hits = [];
     }
     for (let i = 0; i < res.hits.length; i++) {
       try {
         if (res.hits[i].metadata) {
-          res.hits[i].metadata = JSON.parse(res.hits[i].metadata as string)
+          res.hits[i].metadata = JSON.parse(res.hits[i].metadata as string);
         }
       } catch {
         // pass
       }
     }
-    return res
+    return res;
   }
 
   async insert(params: InsertRequest): Promise<InsertResult> {
     if (typeof params.metadata == 'object') {
-      params.metadata = JSON.stringify(params.metadata)
+      params.metadata = JSON.stringify(params.metadata);
     }
-    return (await this.nludb.post("embedding-index/insert", {
+    return (await this.nludb.post('embedding-index/insert', {
       indexId: this.id,
-      ...params
+      ...params,
     })) as InsertResult;
   }
 
   async delete(): Promise<DeleteResult> {
-    return (await this.nludb.post("embedding-index/delete", {
+    return (await this.nludb.post('embedding-index/delete', {
       indexId: this.id,
     })) as DeleteResult;
   }
 
   async embed(): Promise<NludbTask<EmbedIndexResult>> {
-    return (await this.nludb.post("embedding-index/embed", {
-      indexId: this.id,
-    }, true)) as NludbTask<EmbedIndexResult>;
+    return (await this.nludb.post(
+      'embedding-index/embed',
+      {
+        indexId: this.id,
+      },
+      true
+    )) as NludbTask<EmbedIndexResult>;
   }
 }

@@ -1,4 +1,3 @@
-
 export interface SearchHit {
   text: string;
   score: number;
@@ -39,7 +38,7 @@ export interface CreateIndexResult {
   id: string;
 }
 export interface AddFileParams {
-  contentType: "markdown" | "text"
+  contentType: 'markdown' | 'text';
 }
 
 export interface AddFileResult {
@@ -47,8 +46,8 @@ export interface AddFileResult {
 }
 
 export interface SearchRequest {
-  query: string,
-  k?: number
+  query: string;
+  k?: number;
   includeMetadata?: boolean;
 }
 
@@ -57,7 +56,7 @@ export interface SearchResult {
 }
 
 export interface InsertRequest {
-  value: string
+  value: string;
   externalId?: string;
   externalType?: string;
   metadata?: unknown;
@@ -78,10 +77,10 @@ export interface EmbedIndexResult {
 }
 
 export enum NludbTaskStatus {
-  waiting = "waiting",
-  running = "running",
-  succeeded = "succeeded",
-  failed = "failed"
+  waiting = 'waiting',
+  running = 'running',
+  succeeded = 'succeeded',
+  failed = 'failed',
 }
 
 export interface TaskStatusResponse {
