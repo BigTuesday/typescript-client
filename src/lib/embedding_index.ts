@@ -1,5 +1,4 @@
-import { NludbApiBase } from "./api_base";
-import { NludbTask } from "./task"
+import { NludbApiBase, NludbTask } from "./api_base";
 import {
   DeleteResult,
   EmbedIndexResult,

@@ -63,7 +63,7 @@ export class NludbTask<ResultType> {
       return
     }
 
-    await new Promise(r => setTimeout(r, 1000 * retryDelaySeconds));
+    await new Promise(r => setTimeout(r, 1000 * (retryDelaySeconds as number)));
 
     while (((Date.now() - start) / 1000.0) < maxTimeoutSeconds) {
       await this.check()
@@ -73,7 +73,7 @@ export class NludbTask<ResultType> {
       ) {
         return
       }
-      await new Promise(r => setTimeout(r, 1000 * retryDelaySeconds));
+      await new Promise(r => setTimeout(r, 1000 * (retryDelaySeconds as number)));
     }
     return
   }

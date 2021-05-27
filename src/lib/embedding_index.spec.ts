@@ -72,7 +72,7 @@ test('Test Index Embed Task', async (t) => {
     model: EmbeddingModel.QA,
   });
 
-  const insertResults = index.insert({
+  index.insert({
     value: "Test",
     reindex: false
   })
@@ -111,7 +111,7 @@ test('Test Index Usage', async (t) => {
   // Test for supressed reindexing
   const A1 = "Ted can eat an entire block of cheese."
   const Q1 = "Who can eat the most cheese"
-  const insert_results = await index.insert({value: A1, reindex: false})
+  await index.insert({value: A1, reindex: false})
   const search_results = await index.search({query: Q1, k: 1})
   t.is(search_results.hits.length, 0)
 
@@ -137,7 +137,7 @@ test('Test Index Usage', async (t) => {
     floatVal: 1.2
   }
 
-  const insert_results2 = await index.insert({
+  await index.insert({
     value: A2,
     externalId: A2id,
     externalType: A2type,
