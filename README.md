@@ -1,6 +1,52 @@
-# nludb
+# NLUDB Typescript Client Library
 
 NLUDB is a cloud-hosted database that helps developers get work done with natural language content.
+
+**NLUDB is currently in a closed beta.** If you are interested in joining, please sign up at https://www.nludb.com
+
+## Installing
+
+```
+npm install nludb --save
+```
+
+## Using
+
+### Initialization
+
+Sign up for an account at https://www.nludb.com to get your API key. Then use it to initialize your client library:
+
+```typescript
+import NLUDB from 'nludb';
+const nludb = new NLUDB(api_key);
+```
+
+### Embedding Indices
+
+An Embedding Index is a persistent, read-optimized index over an embedded space. Once an index is created, you can search for similar items within that embedding space.
+
+```typescript
+const index = await nludb.createIndex({
+  name: 'Question Answering Index',
+  model: EmbeddingModels.QA,
+  upsert: true,
+});
+
+await index.insert({ value: 'Armadillo shells are bulletproof.' });
+await index.insert({ value: 'Dolphins sleep with one eye open.' });
+await index.insert({ value: 'Alfred Hitchcock was frightened of eggs.' });
+await index.insert({
+  value: 'Jonathan can help you with new employee onboarding',
+});
+await index.insert({ value: 'The code for the New York office is 1234' });
+
+let task = await index.embed();
+await task.wait();
+
+const results = await index.search({
+  query: 'Who should I talk to about new employee setup?',
+});
+```
 
 ## Developing
 
