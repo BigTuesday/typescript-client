@@ -5,7 +5,7 @@ export interface SearchHit {
   index?: number;
   externalId?: string;
   externalType?: string;
-  metadata?: any;
+  metadata?: unknown;
 }
 
 export interface CreateIndexRequest {
@@ -60,7 +60,7 @@ export interface InsertRequest {
   value: string
   externalId?: string;
   externalType?: string;
-  metadata?: any;
+  metadata?: unknown;
   reindex?: boolean;
 }
 

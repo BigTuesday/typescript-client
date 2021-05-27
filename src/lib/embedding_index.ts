@@ -22,7 +22,7 @@ export class EmbeddingIndex {
   }
 
   async search(params: SearchRequest): Promise<SearchResult> {
-    let res = (await this.nludb.post("embedding-index/search", {
+    const res = (await this.nludb.post("embedding-index/search", {
       indexId: this.id,
       ...params
     })) as SearchResult;

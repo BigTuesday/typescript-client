@@ -20,7 +20,7 @@ export class NludbTask<ResultType> {
     this.result = result;
   }
 
-  update(data: TaskStatusResponse | NludbTask<any>) {
+  update(data: TaskStatusResponse | NludbTask<ResultType>) {
     this.taskId = data.taskId
     this.taskStatus = data.taskStatus
     this.taskCreatedOn = data.taskCreatedOn
