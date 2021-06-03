@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateIndexRequest | @nludb/client</title>
+	<title>Span | @nludb/client</title>
 	<meta name="description" content="Documentation for @nludb/client">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="createindexrequest.html">CreateIndexRequest</a>
+					<a href="span.html">Span</a>
 				</li>
 			</ul>
-			<h1>Interface CreateIndexRequest</h1>
+			<h1>Interface Span</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CreateIndexRequest</span>
+						<span class="target">Span</span>
 					</li>
 				</ul>
 			</section>
@@ -81,9 +81,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#model" class="tsd-kind-icon">model</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#upsert" class="tsd-kind-icon">upsert</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#endchar" class="tsd-kind-icon">end<wbr>Char</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#endtoken" class="tsd-kind-icon">end<wbr>Token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#lemma" class="tsd-kind-icon">lemma</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#sentiment" class="tsd-kind-icon">sentiment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#startchar" class="tsd-kind-icon">start<wbr>Char</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#starttoken" class="tsd-kind-icon">start<wbr>Token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="span.html#textwithws" class="tsd-kind-icon">text<wbr>With<wbr>Ws</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,32 +98,92 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="model" class="tsd-anchor"></a>
-					<h3>model</h3>
-					<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="endchar" class="tsd-anchor"></a>
+					<h3>end<wbr>Char</h3>
+					<div class="tsd-signature tsd-kind-icon">end<wbr>Char<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L5">src/lib/types/embedding.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L57">src/lib/types/parsing.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="endtoken" class="tsd-anchor"></a>
+					<h3>end<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">end<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L4">src/lib/types/embedding.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L59">src/lib/types/parsing.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="upsert" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> upsert</h3>
-					<div class="tsd-signature tsd-kind-icon">upsert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<a name="label" class="tsd-anchor"></a>
+					<h3>label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L6">src/lib/types/embedding.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L60">src/lib/types/parsing.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lemma" class="tsd-anchor"></a>
+					<h3>lemma</h3>
+					<div class="tsd-signature tsd-kind-icon">lemma<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L61">src/lib/types/parsing.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sentiment" class="tsd-anchor"></a>
+					<h3>sentiment</h3>
+					<div class="tsd-signature tsd-kind-icon">sentiment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L62">src/lib/types/parsing.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="startchar" class="tsd-anchor"></a>
+					<h3>start<wbr>Char</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Char<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L56">src/lib/types/parsing.ts:56</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="starttoken" class="tsd-anchor"></a>
+					<h3>start<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L58">src/lib/types/parsing.ts:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="text" class="tsd-anchor"></a>
+					<h3>text</h3>
+					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L54">src/lib/types/parsing.ts:54</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="textwithws" class="tsd-anchor"></a>
+					<h3>text<wbr>With<wbr>Ws</h3>
+					<div class="tsd-signature tsd-kind-icon">text<wbr>With<wbr>Ws<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L55">src/lib/types/parsing.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,24 +229,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="addfileresult.html" class="tsd-kind-icon">Add<wbr>File<wbr>Result</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="createindexrequest.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Request</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#model" class="tsd-kind-icon">model</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#upsert" class="tsd-kind-icon">upsert</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a>
 					</li>
@@ -238,9 +289,42 @@
 					<li class=" tsd-kind-interface">
 						<a href="sentence.html" class="tsd-kind-icon">Sentence</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="span.html" class="tsd-kind-icon">Span</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#endchar" class="tsd-kind-icon">end<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#endtoken" class="tsd-kind-icon">end<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#lemma" class="tsd-kind-icon">lemma</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#sentiment" class="tsd-kind-icon">sentiment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#startchar" class="tsd-kind-icon">start<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#starttoken" class="tsd-kind-icon">start<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#text" class="tsd-kind-icon">text</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="span.html#textwithws" class="tsd-kind-icon">text<wbr>With<wbr>Ws</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="taskstatusresponse.html" class="tsd-kind-icon">Task<wbr>Status<wbr>Response</a>
 					</li>

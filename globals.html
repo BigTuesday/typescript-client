@@ -72,6 +72,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum"><a href="enums/embeddingmodel.html" class="tsd-kind-icon">Embedding<wbr>Model</a></li>
 								<li class="tsd-kind-enum"><a href="enums/nludbtaskstatus.html" class="tsd-kind-icon">Nludb<wbr>Task<wbr>Status</a></li>
+								<li class="tsd-kind-enum"><a href="enums/parsingmodel.html" class="tsd-kind-icon">Parsing<wbr>Model</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -92,20 +93,60 @@
 								<li class="tsd-kind-interface"><a href="interfaces/createindexrequest.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/dependencymatcher.html" class="tsd-kind-icon">Dependency<wbr>Matcher</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/doc.html" class="tsd-kind-icon">Doc</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/embedandsearchrequest.html" class="tsd-kind-icon">Embed<wbr>And<wbr>Search<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/embedandsearchresult.html" class="tsd-kind-icon">Embed<wbr>And<wbr>Search<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/embedindexresult.html" class="tsd-kind-icon">Embed<wbr>Index<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/embedrequest.html" class="tsd-kind-icon">Embed<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/embedresult.html" class="tsd-kind-icon">Embed<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/entity.html" class="tsd-kind-icon">Entity</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/insertrequest.html" class="tsd-kind-icon">Insert<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/insertresult.html" class="tsd-kind-icon">Insert<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/parserequest.html" class="tsd-kind-icon">Parse<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/parseresponse.html" class="tsd-kind-icon">Parse<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/phrasematcher.html" class="tsd-kind-icon">Phrase<wbr>Matcher</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchhit.html" class="tsd-kind-icon">Search<wbr>Hit</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchrequest.html" class="tsd-kind-icon">Search<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchresult.html" class="tsd-kind-icon">Search<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/sentence.html" class="tsd-kind-icon">Sentence</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/span.html" class="tsd-kind-icon">Span</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/taskstatusresponse.html" class="tsd-kind-icon">Task<wbr>Status<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/token.html" class="tsd-kind-icon">Token</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenmatcher.html" class="tsd-kind-icon">Token<wbr>Matcher</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#matcher" class="tsd-kind-icon">Matcher</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#matcherclause" class="tsd-kind-icon">Matcher<wbr>Clause</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="matcher" class="tsd-anchor"></a>
+					<h3>Matcher</h3>
+					<div class="tsd-signature tsd-kind-icon">Matcher<span class="tsd-signature-symbol">:</span> <a href="globals.html#matcherclause" class="tsd-signature-type">MatcherClause</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L87">src/lib/types/parsing.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="matcherclause" class="tsd-anchor"></a>
+					<h3>Matcher<wbr>Clause</h3>
+					<div class="tsd-signature tsd-kind-icon">Matcher<wbr>Clause<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L86">src/lib/types/parsing.ts:86</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -124,6 +165,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/nludbtaskstatus.html" class="tsd-kind-icon">Nludb<wbr>Task<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/parsingmodel.html" class="tsd-kind-icon">Parsing<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/embeddingindex.html" class="tsd-kind-icon">Embedding<wbr>Index</a>
@@ -156,6 +200,12 @@
 						<a href="interfaces/deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/dependencymatcher.html" class="tsd-kind-icon">Dependency<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/doc.html" class="tsd-kind-icon">Doc</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/embedandsearchrequest.html" class="tsd-kind-icon">Embed<wbr>And<wbr>Search<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -171,10 +221,22 @@
 						<a href="interfaces/embedresult.html" class="tsd-kind-icon">Embed<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/insertrequest.html" class="tsd-kind-icon">Insert<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/insertresult.html" class="tsd-kind-icon">Insert<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parserequest.html" class="tsd-kind-icon">Parse<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parseresponse.html" class="tsd-kind-icon">Parse<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/phrasematcher.html" class="tsd-kind-icon">Phrase<wbr>Matcher</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/searchhit.html" class="tsd-kind-icon">Search<wbr>Hit</a>
@@ -186,7 +248,25 @@
 						<a href="interfaces/searchresult.html" class="tsd-kind-icon">Search<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/sentence.html" class="tsd-kind-icon">Sentence</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/span.html" class="tsd-kind-icon">Span</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskstatusresponse.html" class="tsd-kind-icon">Task<wbr>Status<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenmatcher.html" class="tsd-kind-icon">Token<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#matcher" class="tsd-kind-icon">Matcher</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#matcherclause" class="tsd-kind-icon">Matcher<wbr>Clause</a>
 					</li>
 				</ul>
 			</nav>

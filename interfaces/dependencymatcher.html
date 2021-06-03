@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateIndexRequest | @nludb/client</title>
+	<title>DependencyMatcher | @nludb/client</title>
 	<meta name="description" content="Documentation for @nludb/client">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="createindexrequest.html">CreateIndexRequest</a>
+					<a href="dependencymatcher.html">DependencyMatcher</a>
 				</li>
 			</ul>
-			<h1>Interface CreateIndexRequest</h1>
+			<h1>Interface DependencyMatcher</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CreateIndexRequest</span>
+						<span class="target">DependencyMatcher</span>
 					</li>
 				</ul>
 			</section>
@@ -81,9 +81,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#model" class="tsd-kind-icon">model</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="createindexrequest.html#upsert" class="tsd-kind-icon">upsert</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dependencymatcher.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dependencymatcher.html#patterns" class="tsd-kind-icon">patterns</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,32 +91,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="model" class="tsd-anchor"></a>
-					<h3>model</h3>
-					<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="label" class="tsd-anchor"></a>
+					<h3>label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L5">src/lib/types/embedding.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L101">src/lib/types/parsing.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="patterns" class="tsd-anchor"></a>
+					<h3>patterns</h3>
+					<div class="tsd-signature tsd-kind-icon">patterns<span class="tsd-signature-symbol">:</span> <a href="../globals.html#matcher" class="tsd-signature-type">Matcher</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L4">src/lib/types/embedding.ts:4</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="upsert" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> upsert</h3>
-					<div class="tsd-signature tsd-kind-icon">upsert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/embedding.ts#L6">src/lib/types/embedding.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L103">src/lib/types/parsing.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,33 +152,30 @@
 					<li class=" tsd-kind-interface">
 						<a href="addfileresult.html" class="tsd-kind-icon">Add<wbr>File<wbr>Result</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="createindexrequest.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Request</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#model" class="tsd-kind-icon">model</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="createindexrequest.html#upsert" class="tsd-kind-icon">upsert</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="dependencymatcher.html" class="tsd-kind-icon">Dependency<wbr>Matcher</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dependencymatcher.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dependencymatcher.html#patterns" class="tsd-kind-icon">patterns</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="doc.html" class="tsd-kind-icon">Doc</a>
 					</li>
