@@ -1,11 +1,4 @@
-export interface SearchHit {
-  text: string;
-  score: number;
-  index?: number;
-  externalId?: string;
-  externalType?: string;
-  metadata?: unknown;
-}
+import { SearchHit } from './base'
 
 export interface CreateIndexRequest {
   name: string;
@@ -35,13 +28,6 @@ export interface EmbedAndSearchResult {
 }
 
 export interface CreateIndexResult {
-  id: string;
-}
-export interface AddFileParams {
-  contentType: 'markdown' | 'text';
-}
-
-export interface AddFileResult {
   id: string;
 }
 
@@ -74,18 +60,4 @@ export interface DeleteResult {
 
 export interface EmbedIndexResult {
   indexId: string;
-}
-
-export enum NludbTaskStatus {
-  waiting = 'waiting',
-  running = 'running',
-  succeeded = 'succeeded',
-  failed = 'failed',
-}
-
-export interface TaskStatusResponse {
-  taskId: string;
-  taskStatus: string;
-  taskCreatedOn: string;
-  taskLastModifiedOn: string;
 }

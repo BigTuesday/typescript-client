@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { NLUDBError } from './nludb_error';
-import { NludbTaskStatus, TaskStatusResponse } from './types';
+import { NludbTaskStatus, TaskStatusResponse } from './types/base';
 
 export class NludbTask<ResultType> {
   nludb: NludbApiBase;
@@ -34,16 +34,6 @@ export class NludbTask<ResultType> {
   async check() {
     const status = await (this.nludb.post(
       'task/status',
-      { taskId: this.taskId },
-      true
-    ) as Promise<NludbTask<TaskStatusResponse>>);
-    this.update(status);
-  }
-
-  async _run_development_mode() {
-    // Forces the task to run remotely (for unit testing; works only in development mode).
-    const status = await (this.nludb.post(
-      'task/next',
       { taskId: this.taskId },
       true
     ) as Promise<NludbTask<TaskStatusResponse>>);

@@ -1,8 +1,9 @@
 import test from 'ava';
 
-import { EmbeddingModel } from './embedding_model';
 import { nludb_client, random_name } from './helper.spec';
-import { CreateIndexRequest, NludbTaskStatus } from './types';
+import { NludbTaskStatus } from './types/base'
+import { CreateIndexRequest } from './types/embedding';
+import { EmbeddingModel } from './types/embedding_model';
 
 test('Test Index Create', async (t) => {
   const nludb = nludb_client();
@@ -84,13 +85,7 @@ test('Test Index Embed Task', async (t) => {
   t.not(task.taskLastModifiedOn, null);
   t.is(task.taskStatus, NludbTaskStatus.waiting);
 
-  await task.check();
-  t.is(task.taskStatus, NludbTaskStatus.waiting);
-
-  await task.wait({ maxTimeoutSeconds: 2 });
-  t.is(task.taskStatus, NludbTaskStatus.waiting);
-
-  await task._run_development_mode();
+  await task.wait();
   t.is(task.taskStatus, NludbTaskStatus.succeeded);
 
   await task.check();
@@ -116,12 +111,11 @@ test('Test Index Usage', async (t) => {
 
   // Now embed
   const task = await index.embed();
-  await task._run_development_mode();
   await task.wait();
 
   const search_results2 = await index.search({ query: Q1, k: 1 });
   t.is(search_results2.hits.length, 1);
-  t.is(search_results2.hits[0].text, A1);
+  t.is(search_results2.hits[0].value, A1);
 
   // Associate metadata
   const A2 = 'Armadillo shells are bulletproof.';
@@ -143,12 +137,11 @@ test('Test Index Usage', async (t) => {
     metadata: A2metadata,
   });
   const task2 = await index.embed();
-  await task2._run_development_mode();
   await task2.wait();
 
   const search_results3 = await index.search({ query: Q2 });
   t.is(search_results3.hits.length, 1);
-  t.is(search_results3.hits[0].text, A2);
+  t.is(search_results3.hits[0].value, A2);
   t.is(typeof search_results3.hits[0].externalId, 'undefined');
   t.is(typeof search_results3.hits[0].externalType, 'undefined');
   t.falsy(search_results3.hits[0].metadata);
@@ -159,15 +152,15 @@ test('Test Index Usage', async (t) => {
   });
 
   t.is(search_results4.hits.length, 1);
-  t.is(search_results4.hits[0].text, A2);
+  t.is(search_results4.hits[0].value, A2);
   t.is(search_results4.hits[0].externalId, A2id);
   t.is(search_results4.hits[0].externalType, A2type);
   t.deepEqual(search_results4.hits[0].metadata, A2metadata);
 
   const search_results5 = await index.search({ query: Q2, k: 10 });
   t.is(search_results5.hits.length, 2);
-  t.is(search_results5.hits[0].text, A2);
-  t.is(search_results5.hits[1].text, A1);
+  t.is(search_results5.hits[0].value, A2);
+  t.is(search_results5.hits[1].value, A1);
 
   await index.delete();
 });

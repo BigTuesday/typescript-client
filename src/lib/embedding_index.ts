@@ -6,13 +6,14 @@ import {
   InsertResult,
   SearchRequest,
   SearchResult,
-} from './types';
+} from './types/embedding';
 
 export class EmbeddingIndex {
   id: string;
   name: string;
   model: string;
   nludb: NludbApiBase;
+
 
   constructor(nludb: NludbApiBase, name: string, model: string, id: string) {
     this.name = name;

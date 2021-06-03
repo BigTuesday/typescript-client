@@ -17,7 +17,7 @@ npm install nludb --save
 Sign up for an account at https://www.nludb.com to get your API key. Then use it to initialize your client library:
 
 ```typescript
-import NLUDB from 'nludb';
+import NLUDB from '@nludb/client';
 const nludb = new NLUDB(api_key);
 ```
 
@@ -173,7 +173,7 @@ This command runs the following tasks:
 When the script finishes, it will log the final command needed to push the release commit to the repo and publish the package on the `npm` registry:
 
 ```sh
-git push --follow-tags origin master; npm publish
+git push --follow-tags origin master; npm publish --access=public
 ```
 
 Look over the release if you'd like, then execute the command to publish everything.

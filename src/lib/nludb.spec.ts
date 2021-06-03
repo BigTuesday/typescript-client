@@ -1,7 +1,7 @@
 import test from 'ava';
 
-import { EmbeddingModel } from './embedding_model';
 import { nludb_client } from './helper.spec';
+import { EmbeddingModel } from './types/embedding_model';
 
 test('Create NLUDB Client', (t) => {
   t.notThrows(() => {
@@ -88,7 +88,8 @@ test('Test Embedding Search', async (t) => {
 
   t.is(results.hits.length, 1);
   t.is(
-    results.hits[0].text,
+    results.hits[0].value,
     'Jonathan can help you with new employee onboarding'
   );
 });
+
