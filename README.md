@@ -201,3 +201,9 @@ npm run version -- --first-release
 # And don't forget to push the docs to GitHub pages:
 npm run doc:publish
 ```
+
+# Amazon
+
+Fargate for the services
+Queue
+Mysql

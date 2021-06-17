@@ -1,5 +1,6 @@
 import { NludbApiBase } from './api_base';
 import { EmbeddingIndex } from './embedding_index';
+import { Models } from './models';
 import {
   CreateIndexRequest,
   CreateIndexResult,
@@ -12,8 +13,11 @@ import { ParseRequest, ParseResponse } from './types/parsing';
 import { ParsingModel } from './types/parsing_model'
 
 export class NLUDB extends NludbApiBase {
+  models: Models;
+
   constructor(apiKey: string, endpoint = 'https://api.nludb.com/api/v1') {
     super(apiKey, endpoint);
+    this.models = new Models(this);
   }
 
   async embed(params: EmbedRequest): Promise<EmbedResult> {
