@@ -14,7 +14,7 @@ export class Models {
     if (typeof params.metadata == 'object') {
       params.metadata = JSON.stringify(params.metadata);
     }
-    return (await this.nludb.post('model/insert', {
+    return (await this.nludb.post('model/create', {
       ...params,
     })) as Model;
   }
