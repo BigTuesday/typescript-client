@@ -71,6 +71,9 @@
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum"><a href="enums/embeddingmodel.html" class="tsd-kind-icon">Embedding<wbr>Model</a></li>
+								<li class="tsd-kind-enum"><a href="enums/limitunit.html" class="tsd-kind-icon">Limit<wbr>Unit</a></li>
+								<li class="tsd-kind-enum"><a href="enums/modeladaptertype.html" class="tsd-kind-icon">Model<wbr>Adapter<wbr>Type</a></li>
+								<li class="tsd-kind-enum"><a href="enums/modeltype.html" class="tsd-kind-icon">Model<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/nludbtaskstatus.html" class="tsd-kind-icon">Nludb<wbr>Task<wbr>Status</a></li>
 								<li class="tsd-kind-enum"><a href="enums/parsingmodel.html" class="tsd-kind-icon">Parsing<wbr>Model</a></li>
 							</ul>
@@ -79,6 +82,7 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/embeddingindex.html" class="tsd-kind-icon">Embedding<wbr>Index</a></li>
+								<li class="tsd-kind-class"><a href="classes/models.html" class="tsd-kind-icon">Models</a></li>
 								<li class="tsd-kind-class"><a href="classes/nludb.html" class="tsd-kind-icon">NLUDB</a></li>
 								<li class="tsd-kind-class"><a href="classes/nludberror.html" class="tsd-kind-icon">NLUDBError</a></li>
 								<li class="tsd-kind-class"><a href="classes/nludbapibase.html" class="tsd-kind-icon">Nludb<wbr>Api<wbr>Base</a></li>
@@ -92,6 +96,8 @@
 								<li class="tsd-kind-interface"><a href="interfaces/addfileresult.html" class="tsd-kind-icon">Add<wbr>File<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/createindexrequest.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/createmodelrequest.html" class="tsd-kind-icon">Create<wbr>Model<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/deletemodelrequest.html" class="tsd-kind-icon">Delete<wbr>Model<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/dependencymatcher.html" class="tsd-kind-icon">Dependency<wbr>Matcher</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/doc.html" class="tsd-kind-icon">Doc</a></li>
@@ -103,6 +109,10 @@
 								<li class="tsd-kind-interface"><a href="interfaces/entity.html" class="tsd-kind-icon">Entity</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/insertrequest.html" class="tsd-kind-icon">Insert<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/insertresult.html" class="tsd-kind-icon">Insert<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/listmodelsresponse.html" class="tsd-kind-icon">List<wbr>Models<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/listprivatemodelsrequest.html" class="tsd-kind-icon">List<wbr>Private<wbr>Models<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/listpublicmodelsrequest.html" class="tsd-kind-icon">List<wbr>Public<wbr>Models<wbr>Request</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/model.html" class="tsd-kind-icon">Model</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parserequest.html" class="tsd-kind-icon">Parse<wbr>Request</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parseresponse.html" class="tsd-kind-icon">Parse<wbr>Response</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/phrasematcher.html" class="tsd-kind-icon">Phrase<wbr>Matcher</a></li>
@@ -134,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Matcher<span class="tsd-signature-symbol">:</span> <a href="globals.html#matcherclause" class="tsd-signature-type">MatcherClause</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L87">src/lib/types/parsing.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/06822ac/src/lib/types/parsing.ts#L87">src/lib/types/parsing.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -144,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">Matcher<wbr>Clause<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/a7f75ea/src/lib/types/parsing.ts#L86">src/lib/types/parsing.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/06822ac/src/lib/types/parsing.ts#L86">src/lib/types/parsing.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,6 +174,15 @@
 						<a href="enums/embeddingmodel.html" class="tsd-kind-icon">Embedding<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/limitunit.html" class="tsd-kind-icon">Limit<wbr>Unit</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/modeladaptertype.html" class="tsd-kind-icon">Model<wbr>Adapter<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/modeltype.html" class="tsd-kind-icon">Model<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/nludbtaskstatus.html" class="tsd-kind-icon">Nludb<wbr>Task<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -171,6 +190,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/embeddingindex.html" class="tsd-kind-icon">Embedding<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/models.html" class="tsd-kind-icon">Models</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/nludb.html" class="tsd-kind-icon">NLUDB</a>
@@ -195,6 +217,12 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/createmodelrequest.html" class="tsd-kind-icon">Create<wbr>Model<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletemodelrequest.html" class="tsd-kind-icon">Delete<wbr>Model<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a>
@@ -228,6 +256,18 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/insertresult.html" class="tsd-kind-icon">Insert<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listmodelsresponse.html" class="tsd-kind-icon">List<wbr>Models<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listprivatemodelsrequest.html" class="tsd-kind-icon">List<wbr>Private<wbr>Models<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listpublicmodelsrequest.html" class="tsd-kind-icon">List<wbr>Public<wbr>Models<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/model.html" class="tsd-kind-icon">Model</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/parserequest.html" class="tsd-kind-icon">Parse<wbr>Request</a>

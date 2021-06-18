@@ -190,8 +190,8 @@ npm run prepare-release
 				<ul>
 					<li><code>hard-reset</code>: cleans the repo by removing all untracked files and resetting <code>--hard</code> to the latest commit. (<strong>Note: this could be destructive.</strong>)</li>
 					<li><code>test</code>: build and fully test the project</li>
-					<li><code>docs:html</code>: generate the latest version of the documentation</li>
-					<li><code>docs:publish</code>: publish the documentation to GitHub Pages</li>
+					<li><code>doc:html</code>: generate the latest version of the documentation</li>
+					<li><code>doc:publish</code>: publish the documentation to GitHub Pages</li>
 					<li><code>version</code>: bump package.json version, update CHANGELOG.md, and git tag the release</li>
 				</ul>
 				<p>When the script finishes, it will log the final command needed to push the release commit to the repo and publish the package on the <code>npm</code> registry:</p>
@@ -235,6 +235,15 @@ npm run doc:publish
 						<a href="enums/embeddingmodel.html" class="tsd-kind-icon">Embedding<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/limitunit.html" class="tsd-kind-icon">Limit<wbr>Unit</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/modeladaptertype.html" class="tsd-kind-icon">Model<wbr>Adapter<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/modeltype.html" class="tsd-kind-icon">Model<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/nludbtaskstatus.html" class="tsd-kind-icon">Nludb<wbr>Task<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -242,6 +251,9 @@ npm run doc:publish
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/embeddingindex.html" class="tsd-kind-icon">Embedding<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/models.html" class="tsd-kind-icon">Models</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/nludb.html" class="tsd-kind-icon">NLUDB</a>
@@ -266,6 +278,12 @@ npm run doc:publish
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/createindexresult.html" class="tsd-kind-icon">Create<wbr>Index<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/createmodelrequest.html" class="tsd-kind-icon">Create<wbr>Model<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletemodelrequest.html" class="tsd-kind-icon">Delete<wbr>Model<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/deleteresult.html" class="tsd-kind-icon">Delete<wbr>Result</a>
@@ -299,6 +317,18 @@ npm run doc:publish
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/insertresult.html" class="tsd-kind-icon">Insert<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listmodelsresponse.html" class="tsd-kind-icon">List<wbr>Models<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listprivatemodelsrequest.html" class="tsd-kind-icon">List<wbr>Private<wbr>Models<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/listpublicmodelsrequest.html" class="tsd-kind-icon">List<wbr>Public<wbr>Models<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/model.html" class="tsd-kind-icon">Model</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/parserequest.html" class="tsd-kind-icon">Parse<wbr>Request</a>
