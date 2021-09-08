@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EmbedAndSearchRequest | @nludb/client</title>
+	<title>DeleteSnapshotsRequest | @nludb/client</title>
 	<meta name="description" content="Documentation for @nludb/client">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="embedandsearchrequest.html">EmbedAndSearchRequest</a>
+					<a href="deletesnapshotsrequest.html">DeleteSnapshotsRequest</a>
 				</li>
 			</ul>
-			<h1>Interface EmbedAndSearchRequest</h1>
+			<h1>Interface DeleteSnapshotsRequest</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">EmbedAndSearchRequest</span>
+						<span class="target">DeleteSnapshotsRequest</span>
 					</li>
 				</ul>
 			</section>
@@ -81,11 +81,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="embedandsearchrequest.html#docs" class="tsd-kind-icon">docs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="embedandsearchrequest.html#includemetadata" class="tsd-kind-icon">include<wbr>Metadata</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="embedandsearchrequest.html#k" class="tsd-kind-icon">k</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="embedandsearchrequest.html#model" class="tsd-kind-icon">model</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="embedandsearchrequest.html#query" class="tsd-kind-icon">query</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deletesnapshotsrequest.html#snapshotid" class="tsd-kind-icon">snapshot<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,52 +90,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="docs" class="tsd-anchor"></a>
-					<h3>docs</h3>
-					<div class="tsd-signature tsd-kind-icon">docs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="snapshotid" class="tsd-anchor"></a>
+					<h3>snapshot<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">snapshot<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L19">src/lib/types/embedding.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="includemetadata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> include<wbr>Metadata</h3>
-					<div class="tsd-signature tsd-kind-icon">include<wbr>Metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L23">src/lib/types/embedding.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="k" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> k</h3>
-					<div class="tsd-signature tsd-kind-icon">k<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L22">src/lib/types/embedding.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="model" class="tsd-anchor"></a>
-					<h3>model</h3>
-					<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L21">src/lib/types/embedding.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="query" class="tsd-anchor"></a>
-					<h3>query</h3>
-					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L20">src/lib/types/embedding.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/nludb/typescript-client/blob/dcf6994/src/lib/types/embedding.ts#L84">src/lib/types/embedding.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,22 +114,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="embedandsearchrequest.html" class="tsd-kind-icon">Embed<wbr>And<wbr>Search<wbr>Request</a>
+						<a href="deletesnapshotsrequest.html" class="tsd-kind-icon">Delete<wbr>Snapshots<wbr>Request</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="embedandsearchrequest.html#docs" class="tsd-kind-icon">docs</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="embedandsearchrequest.html#includemetadata" class="tsd-kind-icon">include<wbr>Metadata</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="embedandsearchrequest.html#k" class="tsd-kind-icon">k</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="embedandsearchrequest.html#model" class="tsd-kind-icon">model</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="embedandsearchrequest.html#query" class="tsd-kind-icon">query</a>
+								<a href="deletesnapshotsrequest.html#snapshotid" class="tsd-kind-icon">snapshot<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
